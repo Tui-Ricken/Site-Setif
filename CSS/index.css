@@ -54,6 +54,11 @@ main{
     color:white;
     font-weight: bold;
 }
-.botao:hover{
-    
+@media (max-width: 600px){
+    .card{
+        width: 95%;
+    }
+    .cards{
+        flex-direction: column;
+    }
 }
