@@ -1,0 +1,82 @@
+@import url('variable.css');
+
+body {
+    font-family: 'arial', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #1e90ff;
+    padding: 20px;
+    font-size: 1.8em;
+}
+
+main {
+    max-width: 990px;
+    background-color: var(--bg-color-container);
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--bg-color-container);
+    margin: 20px auto;
+    padding: 20px;
+
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+.card {
+    padding: 10px;
+    margin: 20px;
+    background-color: var(--card-bg-collor);
+    width: 250px;
+    box-shadow: 0 0 10px var(--card-bg-collor);
+    border-radius: 10px;
+}
+
+.cards {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.homi {
+    width: 60%;
+    height: 40%;
+    margin: 10px;
+}
+
+.botao {
+    background-color: orange;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.5em;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.botao_tema{
+    background-color: var(--card-bg-collor);
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 0.5em;
+    margin-left: 95%;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 95%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}

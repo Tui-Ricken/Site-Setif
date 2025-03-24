@@ -1,0 +1,17 @@
+:root{
+    /*BackGround*/
+    --bg-color: #0c0c0c;
+    --bg-color-container: #121212;
+    --text-color :#ffffff;
+    --card-bg-collor:#414040;
+}
+
+[data-theme="light"] {
+    /*BackGround*/
+    --bg-color: #827e7e;
+    --bg-color-container: #bcb8b8;
+    --text-color: #000000;
+    --card-bg-collor: #dedbdb;
+    
+}
+
