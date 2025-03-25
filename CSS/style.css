@@ -68,6 +68,7 @@ main {
     padding: 10px;
     font-size: 0.5em;
     margin-left: 95%;
+    border: none;
     font-weight: bold;
 }
 

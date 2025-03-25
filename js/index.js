@@ -1,5 +1,6 @@
-alert("Bem-vindo à SETIF 2025");
-console.log("Seja bem-vindo à SETIF 2025");
+document.addEventListener("DOMContentLoaded", (event)=>{
+    buscarInscritos();
+});
 
 function alterarTema(){
     //DOM -> document object model
@@ -9,4 +10,17 @@ function alterarTema(){
     
     const bAlterarTema = document.getElementById("bAlterarTema");
     bAlterarTema.textContent = novoTema === "dark" ? "🌙" : "☀️";
+
+}
+
+function buscarInscritos(){
+    fetch("https://jsonplaceholder.typicode.com/users").then(res => res.json()).then(res => {
+    
+    const divIncritos = document.getElementById("inscritos");
+    res.forEach(user => {
+        const novoParagrafo = document.createElement("p");
+        novoParagrafo.textContent = `Nome: ${user.name}`;
+        divIncritos.appendChild(novoParagrafo);
+    });
+}).catch(e=>console.log(e));
 }
