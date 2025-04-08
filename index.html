@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -12,12 +12,13 @@
 
 <body data-theme="dark">
     <header>
-        <button id="bAlterarTema" class="botao_tema" onclick="alterarTema()">🌙</button>
-        <h1>SETIF 2025 - A Revolução da Tecnologia</h1>
+        <button id="bAlterarTema" class="botao_tema" onclick="alterarTema()">🌓</button>
+        <button aria-label="Botão de alterar idioma" id="bAlterarTema" class="botao_tema"  onclick="alterarIdioma()">PT/EN</button>
+        <h1 id="titulo" data-i18n="titulo">SETIF 2025 - A Revolução da Tecnologia</h1>
     </header>
     <main>
         <img src="img/setif.JPEG" alt="Imagem do universo" width="50%" height="50%">
-        <p> O evento tech mais esprado do ano!</p>
+        <h3 id="titulo-evento" data-i18n="titulo-evento" aria-labelledby="titulo"> O evento tech mais esperado do ano!</h3>
         <p> Participe da SETIF 2025 e descubra as tendências que vão moldar o futuro da tecnologia</p>
         <p> <b>Data:</b> 10 de outubro de 2025</p>
         <p> <b>Local:</b> IFPR Campus Paranavaí</p>
@@ -28,7 +29,7 @@
         <div class="cards">
 
             <div class="card">    
-                <img src="img/pessoa.webp" alt="Imagem de uma pessoa" class="homi" >
+                <img src="img/pessoa.webp" alt="Imagem de uma pessoa" class="homi" data-i18n-alt="Imagem de uma pessoa">
                 <h3> Palestra inspiradoras</h3>
                 <p> Os maiores especialistas do setor discutirão as últimas tendências tecnológicas</p>
             </div>
